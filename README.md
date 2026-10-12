@@ -7,13 +7,20 @@
 
 > **⚠️ Hackathon MVP Notice**: This is a proof-of-concept (PoC) developed for a hackathon to demonstrate a novel approach to fraud detection in government platforms. It uses synthetic data and is not intended for production use without significant enhancements.
 
-**Absher Raqeeb AI** is a sophisticated multi-layer fraud detection system designed for government platforms. It combines behavioral analysis, AI/ML models, sequence pattern detection, and graph-based network analysis to detect fraudulent transactions in real-time.
+**Absher Raqeeb AI** is a fraud-detection prototype built for a 48-hour hackathon. It scores a simulated
+government-service transaction by combining four risk layers (behavioral rules, ML/anomaly-detection
+models, session-sequence patterns, and graph links between IPs, devices, and document hashes) into one
+0-100 risk score with an explanation.
 
-## 🎥 Demo
+| | |
+|---|---|
+| **Status** | Hackathon prototype. Trained and evaluated on synthetic data only. Not production-ready and not an official Absher product. |
+| **My contribution** | The ML pipeline and the graph-based risk layer. |
+| **Stack** | Python, Flask, scikit-learn, NumPy (backend); React, Vite, Tailwind CSS, D3.js (frontend) |
+| **Demo** | [Demo video](https://drive.google.com/file/d/15HCAuWhfzSLYWMd_2UO5S06kiTvHpQc2/view?usp=sharing) (Google Drive) |
 
-**[Watch Live Demo Video](https://drive.google.com/file/d/15HCAuWhfzSLYWMd_2UO5S06kiTvHpQc2/view?usp=sharing)**
-
-See the system in action: real-time risk assessment, interactive graph visualization, and comprehensive fraud detection across all four layers.
+The accuracy figures below come from synthetic, rule-generated data. They show the pipeline runs end
+to end, not how it would perform on real fraud.
 
 ---
 
@@ -46,7 +53,7 @@ This project was developed as a **Minimum Viable Product (MVP)** for a hackathon
 
 ## 📋 Overview
 
-Absher Raqeeb (رقيب أبشر - "Absher Watchman") is an advanced security intelligence platform that protects government services from fraud through a unique 4-layer architecture:
+Absher Raqeeb (رقيب أبشر - "Absher Watchman") is a prototype that explores fraud detection for government-style online services using a 4-layer architecture:
 
 ### ✨ Key Features
 
@@ -100,8 +107,8 @@ Absher Raqeeb (رقيب أبشر - "Absher Watchman") is an advanced security in
 
 #### 1. Clone the Repository
 ```bash
-git clone <repository-url>
-cd absher-raqeeb-ai
+git clone https://github.com/rabehalmutairi/raqeeb-ai.git
+cd raqeeb-ai
 ```
 
 #### 2. Backend Setup
@@ -628,15 +635,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Open an issue on GitHub for bug reports or feature requests
 - Check existing issues before creating a new one
 
-### Hackathon Judges
-This project demonstrates:
-- ✅ Novel 4-layer architecture for fraud detection
-- ✅ Real ML implementation (not mock data)
-- ✅ Graph-based intelligence for fraud networks
-- ✅ Practical application to government services
-- ✅ Clean, well-documented code
-- ✅ Interactive visualization of complex data
-
 ---
 
 ## ⚠️ Disclaimer
@@ -646,7 +644,3 @@ This is a proof-of-concept developed for educational and demonstration purposes 
 **Do not use in production** without significant security hardening, real data validation, and proper testing.
 
 ---
-
-**Made with ❤️ for secure government platforms**
-
-⭐ Star this repository if you find it helpful!
